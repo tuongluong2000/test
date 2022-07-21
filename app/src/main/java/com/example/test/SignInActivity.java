@@ -83,7 +83,7 @@ public class SignInActivity  extends AppCompatActivity {
                 .setGoogleIdTokenRequestOptions(BeginSignInRequest.GoogleIdTokenRequestOptions.builder()
                         .setSupported(true)
                         // Your server's client ID, not your Android client ID.
-                        .setServerClientId(getString(R.string.your_web_client_id))
+                        .setServerClientId(getString(R.string.default_web_client_id))
                         // Show all accounts on the device.
                         .setFilterByAuthorizedAccounts(false)
                         .build())
@@ -105,8 +105,7 @@ public class SignInActivity  extends AppCompatActivity {
                 .addOnFailureListener(this, new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        // No saved credentials found. Launch the One Tap sign-up flow, or
-                        // do nothing and continue presenting the signed-out UI.
+                        // No Google Accounts found. Just continue presenting the signed-out UI.
                         Log.d(TAG, e.getLocalizedMessage());
                     }
                 });
