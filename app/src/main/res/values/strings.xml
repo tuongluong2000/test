@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">test</string>
     <string name="title_text">Google Sign-In</string>
+    <string name="your_web_client_id">459010423193-ng9jt0fdmmhdp2h3tp629jqut2e8bhfr.apps.googleusercontent.com</string>
 
     <!-- Sign-in status messages -->
     <string name="signed_in_fmt">Signed in as: %s</string>
