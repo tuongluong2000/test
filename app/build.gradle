@@ -50,5 +50,5 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-analytics'
 
-    implementation "io.grpc:grpc-okhttp:1.32.2"
+
 }
