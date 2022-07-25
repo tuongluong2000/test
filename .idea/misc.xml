@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.119" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.119" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/drawable/ic_search_black_24dp_background.xml" value="0.119" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/drawable/ic_search_black_24dp_foreground.xml" value="0.119" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/activity_content.xml" value="0.15520833333333334" />
         <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/activity_login.xml" value="0.12760416666666666" />
         <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/activity_main.xml" value="0.1078125" />
         <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/activity_signin.xml" value="0.264" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/fragment_content_note.xml" value="0.1078125" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/notes_list_item.xml" value="0.182518115942029" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/layout/switch_item.xml" value="0.1078125" />
+        <entry key="..\:/hoc ki 8/test/app/src/main/res/menu/menu_top.xml" value="0.4" />
       </map>
     </option>
   </component>
