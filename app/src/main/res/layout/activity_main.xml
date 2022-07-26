@@ -5,37 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:id="@+id/ln_addout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:orientation="horizontal"
-        android:weightSum="2">
-        <Button
-            android:id="@+id/button_add_note"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="add note"
-            android:textSize="20dp"
-            tools:ignore="MissingConstraints"/>
-        <Button
-            android:id="@+id/button_signout"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:layout_height="wrap_content"
-            android:text="Sign Out" />
-    </LinearLayout>
 
-    <SearchView
-        android:id="@+id/searchView_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background"
-        app:layout_constraintTop_toBottomOf="@+id/ln_addout">
-    </SearchView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notes_recycler_view"
@@ -48,10 +20,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView_main"
         app:spanCount="1"
         tools:itemCount="10"
         tools:layout_editor_absoluteY="0dp"
-        tools:listitem="@layout/notes_list_item" />
+        tools:listitem="@layout/notes_list_item"
+        tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/button_add_note"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

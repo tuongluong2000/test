@@ -2,6 +2,8 @@ package com.example.test;
 
 import static android.content.ContentValues.TAG;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.os.Bundle;
@@ -39,6 +41,7 @@ public class SignInActivity  extends AppCompatActivity {
     private boolean showOneTapUI = true;
     private Button button;
     private FirebaseAuth mAuth;
+    AlertDialog.Builder builder;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState
@@ -48,7 +51,7 @@ public class SignInActivity  extends AppCompatActivity {
 
 // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-
+        builder = new AlertDialog.Builder(this);
 
 
         button = findViewById(R.id.button_signin_google);
@@ -187,5 +190,26 @@ public class SignInActivity  extends AppCompatActivity {
                 break;
         }
 
+    }
+    @Override
+    public void onBackPressed() {
+
+        builder.setMessage("Do you wan to exit")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finishAffinity();
+                        System.exit(0);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.setTitle("Exit app");
+        alertDialog.show();
     }
 }

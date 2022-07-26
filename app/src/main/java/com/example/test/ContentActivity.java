@@ -148,7 +148,7 @@ public class ContentActivity extends AppCompatActivity {
         //Creating dialog box
         AlertDialog alert = builder.create();
         //Setting the title manually
-        alert.setTitle("AlertDialogExample");
+        alert.setTitle("Delete");
         alert.show();
 
 
